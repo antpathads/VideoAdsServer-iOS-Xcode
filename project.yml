@@ -1,0 +1,19 @@
+name: VideoAdsServer
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    iOS: "13.0"
+  xcodeVersion: "15.0"
+targets:
+  VideoAdsServer:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: Sources/VideoAdsServer
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.antpathads.videoadsserver
+      SWIFT_VERSION: 5.0
+      INFOPLIST_FILE: Sources/VideoAdsServer/Info.plist
+    scheme:
+      testTargets: []
